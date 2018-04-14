@@ -21,7 +21,7 @@ li a {
 }
 
 .pile-link::before {
-  content: "🗎 ";
+  content: "🗎\00a0";
 }
 
 .btn {
