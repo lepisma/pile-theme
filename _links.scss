@@ -21,7 +21,13 @@ li a {
 }
 
 .pile-link::before {
-  content: "🗎\00a0";
+  background-color: $back-white;
+  content: "«\00a0";
+}
+
+.pile-link::after {
+  background-color: $back-white;
+  content: "\00a0»";
 }
 
 .btn {
