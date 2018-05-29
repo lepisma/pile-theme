@@ -10,6 +10,10 @@
   p, li {
     @include light-para(15px);
   }
+
+  li {
+    margin-bottom: 16px;
+  }
 }
 
 .edits::before {
