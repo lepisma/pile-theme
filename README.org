@@ -4,8 +4,8 @@ Sass files for my [[http://lepisma.github.io/pile/][wiki]].
 
 #+NAME: om-sass
 #+BEGIN_SRC shell :exports none
-sass --sourcemap=none ./main.scss ../pile/files/assets/css/main.css
-yes | cp ../pile/files/assets/css/main.css ../pile/docs/assets/css/main.css
+sass --sourcemap=none ./main.scss ../pile/assets/css/main.css
+yes | cp ../pile/assets/css/main.css ../pile/docs/assets/css/main.css
 #+END_SRC
 
 #+RESULTS: om-sass
