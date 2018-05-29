@@ -1,0 +1,7 @@
+.page-tags {
+  margin-bottom: 30px;
+  a {
+    @include tag;
+    margin-right: 5px;
+  }
+}

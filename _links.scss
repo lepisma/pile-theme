@@ -3,6 +3,7 @@
 #breadcrumbs a,
 figcaption a,
 p a,
+.page-tags a,
 li a {
   @include link-underline($back-white, $text-dark);
 
