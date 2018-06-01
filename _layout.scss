@@ -55,6 +55,11 @@ header {
         color: $text-gray;
       }
       margin-left: 10px;
+
+      &.active {
+        border-bottom: solid;
+        border-bottom-width: 2px;
+      }
     }
     a:first-child {
       margin-left: 0;
