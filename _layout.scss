@@ -37,9 +37,10 @@ body {
     margin-top: 10px;
     text-transform: none;
   }
-  .page-meta {
-    @include light-meta();
-  }
+}
+
+.page-meta {
+  @include light-meta();
 }
 
 header {
@@ -136,4 +137,19 @@ header > div {
   margin-top: 70px;
   height: 10px;
   background: $accent-dark;
+}
+
+// Archive listing
+.archive-item {
+  margin: 50px 0;
+
+  .archive-title {
+    font-size: 25px;
+    margin: 5px 0;
+    @include link-reset();
+
+    &:hover {
+      @include link-reset();
+    }
+  }
 }
