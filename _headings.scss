@@ -27,3 +27,30 @@ h3, h4, h5, h6 {
   font-size: 20px;
   font-style: italic;
 }
+
+// Section numbers
+.section-number-1,
+.section-number-2,
+.section-number-3,
+.section-number-4,
+.section-number-5,
+.section-number-6 {
+  @include light-meta();
+  color: $back-medium;
+  float: right;
+}
+
+.section-number-1 {
+  font-size: 30px;
+}
+
+.section-number-2 {
+  font-size: 24px;
+}
+
+.section-number-3,
+.section-number-4,
+.section-number-5,
+.section-number-6 {
+  font-size: 20px;
+}

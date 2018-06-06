@@ -10,9 +10,23 @@ pre.src:hover::before {
   font-size: 30px;
 }
 
-.outline-3 h3 {
+.outline-3 h3,
+.outline-4 h4,
+.outline-5 h5,
+.outline-6 h6 {
   font-size: 24px;
   font-style: normal;
+}
+
+.outline-2 .section-number-2 {
+  font-size: 30px;
+}
+
+.outline-3 .section-number-3,
+.outline-4 .section-number-4,
+.outline-5 .section-number-5,
+.outline-6 .section-number-5 {
+  font-size: 24px;
 }
 
 .timestamp, .timestamp-kwd {
