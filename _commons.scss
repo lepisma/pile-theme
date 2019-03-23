@@ -149,6 +149,19 @@ $code-font: 'Fira Mono';
   @include button(2px, 13px, 4px);
   line-height: 8px;
   white-space: nowrap;
+
+  &.active {
+    text-shadow: none;
+    text-decoration: none;
+    color: $back-white;
+    background-color: $code-foreground;
+
+    &:hover {
+      background-color: $back-light;
+      background-image: none;
+      color: $text-dark;
+    }
+  }
 }
 
 @mixin light-para($font-size) {
