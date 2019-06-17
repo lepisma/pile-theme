@@ -33,7 +33,7 @@ pre.src:hover::before {
 }
 
 .todo {
-  color: #dc752f;
+  color: #ee3333;
 }
 
 .done {
@@ -46,6 +46,10 @@ pre.src:hover::before {
 
 .tag > span {
   @include tag();
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 100px;
+  border-style: dashed;
 }
 
 .priority {
