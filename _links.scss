@@ -32,7 +32,7 @@ li a {
 }
 
 .btn {
-  @include button(4px, 14px, 7px);
+  @include button(1px, 14px, 7px);
   cursor: pointer;
 }
 
