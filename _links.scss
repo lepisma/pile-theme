@@ -38,6 +38,29 @@ li a {
 
 .btn.disabled {
   color: $text-light;
+  &:hover {
+    cursor: default;
+  }
+}
+
+.btn.small {
+  @include button(1px, 12px, 3px);
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+.btn.highlight {
+  text-shadow: none;
+  text-decoration: none;
+  color: $text-dark;
+  background-color: yellow;
+}
+
+.btn.primary {
+  text-shadow: none;
+  text-decoration: none;
+  color: $back-white;
+  background-color: $accent;
 }
 
 .image-link, .image-link:hover {
