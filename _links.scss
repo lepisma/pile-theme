@@ -61,6 +61,12 @@ li a {
   text-decoration: none;
   color: $back-white;
   background-color: $accent;
+  
+  &:hover {
+    background-color: $back-light;
+    background-image: none;
+    color: $text-dark;
+  }
 }
 
 .image-link, .image-link:hover {
