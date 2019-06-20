@@ -4,6 +4,7 @@
 figcaption a,
 p a,
 .page-tags a,
+#crosslinks a:not(.highlight),
 li a {
   @include link-underline($back-white, $text-dark);
 
@@ -29,6 +30,13 @@ li a {
 .pile-link::after {
   background-color: $back-white;
   content: "\00a0›";
+}
+
+#crosslinks {
+  margin-top: 20px;
+  a:not(.highlight) {
+    @include tag;
+  }
 }
 
 .btn {
@@ -61,7 +69,7 @@ li a {
   text-decoration: none;
   color: $back-white;
   background-color: $accent;
-  
+
   &:hover {
     background-color: $back-light;
     background-image: none;
