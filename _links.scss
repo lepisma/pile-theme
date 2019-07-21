@@ -4,6 +4,7 @@
 figcaption a,
 p a,
 .page-tags a,
+table a,
 #crosslinks a:not(.highlight),
 li a {
   @include link-underline($back-white, $text-dark);
