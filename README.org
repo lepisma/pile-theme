@@ -2,11 +2,8 @@
 
 Sass files for my [[http://lepisma.github.io/][web site]].
 
-#+NAME: om-sass
+#+NAME: orgo-sass
 #+BEGIN_SRC shell :exports none
 sass ./main.scss ../lepisma.github.io/assets/css/main.css
 yes | cp ../lepisma.github.io/assets/css/main.css ../lepisma.github.io-deploy/assets/css/main.css
 #+END_SRC
-
-#+RESULTS: om-sass
-
