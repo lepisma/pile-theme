@@ -37,6 +37,14 @@ h3, h4, h5, h6 {
 .section-number-6 {
   @include light-meta();
   color: $back-medium;
+  // margin-left: -1em;
+  // text-align: right;
+  // direction: rtl;
+  line-height: 1;
+  @media (min-width: 1000px) {
+    position: absolute; // to remove the bounding box
+    transform: translateX(-100%) translateX(-10px);
+  }
 }
 
 .section-number-1 {
