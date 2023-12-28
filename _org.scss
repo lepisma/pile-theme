@@ -25,6 +25,7 @@ pre.src:hover::before {
 
 .timestamp, .timestamp-kwd {
   @include light-meta();
+  font-family: $code-font;
 }
 
 .todo, .done {
