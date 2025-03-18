@@ -1,5 +1,7 @@
+@use "commons";
+
 blockquote {
-  @include left-line();
+  @include commons.left-line();
 
   p {
     display: inline;
@@ -7,7 +9,7 @@ blockquote {
   }
 
   footer {
-    @include light-meta();
+    @include commons.light-meta();
     text-transform: none;
   }
 }

@@ -1,3 +1,5 @@
+@use "commons";
+
 // Lists
 ul, ol, dl {
   list-style: none;
@@ -7,7 +9,7 @@ ul, ol, dl {
   li::before, dt::before {
     display: inline-block;
     width: 1em;
-    @include light-para(15px);
+    @include commons.light-para(15px);
   }
 
   li {

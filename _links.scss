@@ -1,3 +1,5 @@
+@use "commons";
+
 // Link and buttons
 
 #breadcrumbs a,
@@ -7,53 +9,53 @@ p a,
 table a,
 #crosslinks a:not(.highlight),
 li a {
-  @include link-underline($back-white, $text-dark);
+  @include commons.link-underline(commons.$back-white, commons.$text-dark);
 
   &:hover {
-    @include link-underline($back-light, $text-dark);
+    @include commons.link-underline(commons.$back-light, commons.$text-dark);
   }
 }
 
 #content .page-intro p a,
 #footnotes a {
-  @include link-underline($back-white, $text-gray);
+  @include commons.link-underline(commons.$back-white, commons.$text-gray);
 
   &:hover {
-    @include link-underline($back-light, $text-gray);
+    @include commons.link-underline(commons.$back-light, commons.$text-gray);
   }
 }
 
 .pile-link::before {
-  background-color: $back-white;
+  background-color: commons.$back-white;
   content: "‹\00a0";
 }
 
 .pile-link::after {
-  background-color: $back-white;
+  background-color: commons.$back-white;
   content: "\00a0›";
 }
 
 #crosslinks {
   margin-top: 20px;
   a:not(.highlight) {
-    @include tag;
+    @include commons.tag;
   }
 }
 
 .btn {
-  @include button(1px, 14px, 7px);
+  @include commons.button(1px, 14px, 7px);
   cursor: pointer;
 }
 
 .btn.disabled {
-  color: $text-light;
+  color: commons.$text-light;
   &:hover {
     cursor: default;
   }
 }
 
 .btn.small {
-  @include button(1px, 12px, 3px);
+  @include commons.button(1px, 12px, 3px);
   padding-right: 9px;
   padding-left: 9px;
 }
@@ -61,23 +63,23 @@ li a {
 .btn.highlight {
   text-shadow: none;
   text-decoration: none;
-  color: $text-dark;
+  color: commons.$text-dark;
   background-color: yellow;
 }
 
 .btn.primary {
   text-shadow: none;
   text-decoration: none;
-  color: $back-white;
-  background-color: $accent;
+  color: commons.$back-white;
+  background-color: commons.$accent;
 
   &:hover {
-    background-color: $back-light;
+    background-color: commons.$back-light;
     background-image: none;
-    color: $text-dark;
+    color: commons.$text-dark;
   }
 }
 
 .image-link, .image-link:hover {
-  @include link-reset();
+  @include commons.link-reset();
 }

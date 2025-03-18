@@ -1,6 +1,8 @@
+@use "commons";
+
 .watermark {
-  color: $back-light;
-  font-family: $sans-font;
+  color: commons.$back-light;
+  font-family: commons.$sans-font;
   font-weight: bold;
 
   z-index: -100;

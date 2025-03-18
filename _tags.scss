@@ -1,6 +1,8 @@
+@use "commons";
+
 .page-tags {
   a {
-    @include tag;
+    @include commons.tag;
     margin-right: 5px;
     line-height: 3em;
   }

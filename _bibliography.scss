@@ -1,3 +1,5 @@
+@use "commons";
+
 // Bibliography section and page styling
 
 .org-ref-bib-h1 {
@@ -6,23 +8,23 @@
   border-width: 0;
   border-top-style: solid;
   border-top-width: 1px;
-  border-color: $back-light;
-  font-family: $sans-font;
-  @include light-para(20px);
+  border-color: commons.$back-light;
+  font-family: commons.$sans-font;
+  @include commons.light-para(20px);
 }
 
 .org-ref-bib {
-  @include light-para(15px);
+  @include commons.light-para(15px);
 
   li > a:nth-child(2) {
-    @include link-reset();
+    @include commons.link-reset();
     &:hover {
-      @include link-reset();
+      @include commons.link-reset();
     }
   }
 
   .bib-link {
-    @include light-meta();
-    @include link-reset();
+    @include commons.light-meta();
+    @include commons.link-reset();
   }
 }

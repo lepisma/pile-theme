@@ -1,3 +1,5 @@
+@use "commons";
+
 // Org export specific styling
 
 #org-div-home-and-up,
@@ -24,12 +26,12 @@ pre.src:hover::before {
 }
 
 .timestamp, .timestamp-kwd {
-  @include light-meta();
-  font-family: $code-font;
+  @include commons.light-meta();
+  font-family: commons.$code-font;
 }
 
 .todo, .done {
-  @include tag();
+  @include commons.tag();
   font-weight: bold;
 }
 
@@ -38,7 +40,7 @@ pre.src:hover::before {
 }
 
 .done {
-  color: $text-light;
+  color: commons.$text-light;
 }
 
 .tag {
@@ -46,7 +48,7 @@ pre.src:hover::before {
 }
 
 .tag > span {
-  @include tag();
+  @include commons.tag();
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 100px;
@@ -54,6 +56,6 @@ pre.src:hover::before {
 }
 
 .priority {
-  color: $text-light;
-  font-family: $code-font;
+  color: commons.$text-light;
+  font-family: commons.$code-font;
 }

@@ -1,8 +1,10 @@
+@use "commons";
+
 hr {
   border: none;
   border-top-style: solid;
   border-top-width: 1px;
-  color: $back-light;
+  color: commons.$back-light;
   margin-bottom: 50px;
   margin-top: 50px;
 }

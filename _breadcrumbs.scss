@@ -1,7 +1,9 @@
+@use "commons";
+
 // Breadcrumbs
 
 #breadcrumbs {
-  @include light-meta();
+  @include commons.light-meta();
   a {
     background-image: none;
   }

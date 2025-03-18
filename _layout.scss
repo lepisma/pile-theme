@@ -1,3 +1,5 @@
+@use "commons";
+
 // Basic layout
 
 html, body {
@@ -8,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 16px;
-  font-family: $body-font;
+  font-family: commons.$body-font;
 }
 
 #content, header, .page-header {
@@ -40,19 +42,19 @@ body {
 }
 
 .page-meta {
-  @include light-meta();
+  @include commons.light-meta();
 }
 
 header {
   .site-nav {
-    @include light-meta();
+    @include commons.light-meta();
     font-weight: bold;
     line-height: 2.0;
     a {
-      color: $text-light;
+      color: commons.$c3-5;
       text-decoration: none;
       &:hover {
-        color: $text-gray;
+        color: commons.$text-gray;
       }
       margin-left: 10px;
 
@@ -93,15 +95,15 @@ header > div {
 }
 
 .site-header nav a {
-  color: $text-light;
-  font-family: $sans-font;
+  color: commons.$text-light;
+  font-family: commons.$sans-font;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
 
   &:hover {
     border: 0;
-    color: $accent;
+    color: commons.$accent;
   }
 }
 
@@ -130,7 +132,7 @@ header > div {
 
 #content {
   .page-intro {
-    @include light-para(15px);
+    @include commons.light-para(15px);
     margin-bottom: 40px;
   }
   p, li, dd {
@@ -141,7 +143,7 @@ header > div {
 #footer {
   margin-top: 70px;
   height: 10px;
-  background: $accent-dark;
+  background: commons.$accent-dark;
 }
 
 // Archive listing
@@ -151,10 +153,10 @@ header > div {
   .archive-title {
     font-size: 25px;
     margin: 5px 0;
-    @include link-reset();
+    @include commons.link-reset();
 
     &:hover {
-      @include link-reset();
+      @include commons.link-reset();
     }
   }
 }

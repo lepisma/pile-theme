@@ -1,28 +1,30 @@
+@use "commons";
+
 // Table of contents
 
 nav#table-of-contents {
-  background-color: $code-background;
+  background-color: commons.$code-background;
   border-radius: 5px;
-  @include light-para(13px);
+  @include commons.light-para(13px);
   margin: 20px 0;
   padding: 20px;
   padding-left: 50px;
   line-height: 1.6 !important;
 
   #text-table-of-contents {
-    background-color: $code-background;
+    background-color: commons.$code-background;
   }
 
   h2 {
-    @include light-meta();
+    @include commons.light-meta();
     margin-top: 10px;
   }
 
   li a {
-    @include link-underline($code-background, $text-gray);
+    @include commons.link-underline(commons.$code-background, commons.$text-gray);
 
     &:hover {
-      @include link-underline($code-background, $text-gray);
+      @include commons.link-underline(commons.$code-background, commons.$text-gray);
     }
   }
 }
@@ -38,7 +40,7 @@ nav#table-of-contents {
     padding: 0;
 
     #text-table-of-contents {
-      background-color: $back-white;
+      background-color: commons.$back-white;
       box-shadow: 0 0 2px;
       padding: 20px;
       display: none;
@@ -70,10 +72,10 @@ nav#table-of-contents {
     }
 
     li a {
-      @include link-underline($back-white, $text-gray);
+      @include commons.link-underline(commons.$back-white, commons.$text-gray);
 
       &:hover {
-        @include link-underline($back-light, $text-gray);
+        @include commons.link-underline(commons.$back-light, commons.$text-gray);
       }
     }
   }

@@ -1,8 +1,10 @@
+@use "commons";
+
 // Code highlighting
 
 pre.src, pre.example {
-  @include left-line();
-  font-family: $code-font;
+  @include commons.left-line();
+  font-family: commons.$code-font;
   font-size: 14px;
   line-height: 1.9;
   overflow-x: auto;
@@ -10,8 +12,8 @@ pre.src, pre.example {
 }
 
 code {
-  font-family: $code-font;
-  color: $code-foreground;
+  font-family: commons.$code-font;
+  color: commons.$code-foreground;
   font-size: 15px;
   padding: 0 5px;
 }
@@ -43,7 +45,7 @@ $code-warning: #dc752f;
 
 .example,
 .src {
-  color: $code-foreground;
+  color: commons.$code-foreground;
 
   .org-keyword {
     color: $code-keyword;

@@ -1,3 +1,5 @@
+@use "commons";
+
 figure {
   text-align: center;
   img {
@@ -5,10 +7,10 @@ figure {
   }
   figcaption {
     .figure-number {
-      @include light-meta();
+      @include commons.light-meta();
     }
     margin-top: 10px;
-    @include light-para(15px);
+    @include commons.light-para(15px);
   }
 }
 
