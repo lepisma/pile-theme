@@ -42,7 +42,9 @@ body {
 }
 
 .page-meta {
-  @include commons.light-meta();
+    @include commons.light-meta();
+    text-transform: none;
+    color: unset;
 }
 
 header {
