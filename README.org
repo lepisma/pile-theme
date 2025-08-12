@@ -4,8 +4,10 @@ Sass files for my [[http://lepisma.github.io/][web site]].
 
 #+NAME: orgo-sass
 #+BEGIN_SRC shell :exports none
-sass ./main.scss ~/Nextcloud/lepisma.github.io/assets/css/main.css
-yes | cp ~/Nextcloud/lepisma.github.io/assets/css/main.css ~/Nextcloud/projects/lepisma.github.io-deploy/assets/css/main.css
+  sass --style=compressed ./main.scss ~/Nextcloud/lepisma.github.io/assets/css/main.css
+  yes | cp ~/Nextcloud/lepisma.github.io/assets/css/main.css ~/Nextcloud/lepisma.github.io/assets/css/main.min.css
+  yes | cp ~/Nextcloud/lepisma.github.io/assets/css/main.css ~/Nextcloud/projects/lepisma.github.io-deploy/assets/css/main.css
+  yes | cp ~/Nextcloud/lepisma.github.io/assets/css/main.min.css ~/Nextcloud/projects/lepisma.github.io-deploy/assets/css/main.min.css
 #+END_SRC
 
 #+RESULTS: orgo-sass

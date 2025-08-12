@@ -147,8 +147,22 @@ $code-font: 'Fira Mono';
 }
 
 @mixin tag() {
-  @include button(1px, 13px, 4px);
-  line-height: 8px;
+  padding: 4px 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $back-light;
+  border-radius: 1px;
+  font-family: $sans-font;
+  font-variant: all-small-caps;
+  font-size: 13px;
+  font-style: normal;
+  letter-spacing: 2px;
+  background-image: none;
+  &:hover {
+    background-color: $back-light;
+    background-image: none;
+  }
+
   white-space: nowrap;
 
   &.active {
@@ -158,9 +172,9 @@ $code-font: 'Fira Mono';
     background-color: $code-foreground;
 
     &:hover {
-      background-color: $back-light;
+      background-color: $text-light;
       background-image: none;
-      color: $text-dark;
+      color: $back-white;
     }
   }
 }
